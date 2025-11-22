@@ -227,7 +227,7 @@ const DataList = ({ title, data, Icon }) => (
     <Card title={title} icon={Icon} className="mb-6">
         <ul className="space-y-3">
             {data.slice(0, 5).map(item => (
-                <li key={item.id} className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+               <li key={item.id} className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
                     <span className="text-sm font-medium">{item.name || item.title || item.id}</span>
                     <ChevronRight className="w-4 h-4 text-slate-400" />
                 </li>
@@ -279,7 +279,7 @@ const Sidebar = ({ currentPage, setCurrentPage, user }) => {
         <aside className="w-72 fixed h-screen bg-white shadow-xl p-6 flex flex-col justify-between">
             <div>
                 <div className="flex items-center mb-10">
-                    <img src="https://via.placeholder.com/32" alt="Logo" className="w-8 h-8 mr-2" />
+                    <Building2 className="w-8 h-8 mr-2 text-[#03F1C5]" />
                     <h2 className="text-xl font-bold text-slate-800">AgencyFlow</h2>
                 </div>
                 <nav>
